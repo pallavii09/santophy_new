@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Santophy</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!-- fontawesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+            
+            <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+            <!-- stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light santophy_header fixed">
+    <div class="container-fluid">
+        <a href="javascript:void(0)" class="head_menu_btn head_menu_services_btn">
+            <span class="head_menu_icon position-relative"></span>
+        </a>
+        <!-- main menu drop down start here -->
+<div class="top_mega_menu d-inline-flex w-100">
+    <div class="menu_body  py-105">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">COMPANY</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="/about/" class="tmm_item d-block font-14 primary-color pt-3">About</a></li>
+                            <li><a href="/portfolio/" class="tmm_item d-block font-14 primary-color pt-3">Portfolio</a></li>
+                            <li><a href="/contact/" class="tmm_item d-block font-14 primary-color pt-3">Request a Quote</a></li>
+                            <li><a href="/contact/" class="tmm_item d-block font-14 primary-color pt-3">Contact</a></li>
+                            <!-- <li><a href="/our-team/" class="tmm_item">Meet Our Team</a></li>-->
+                            <li><a href="/privacy-policy/" class="tmm_item d-block font-14 primary-color pt-3">Privacy Policy</a></li>
+                            <!--<li><a href="javascript:void(0)" class="tmm_item">Blog</a></li>-->
+                            <!--<li><a href="javascript:void(0)" class="tmm_item">FAQ</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4 ">SERVICES</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="/services/web-development/" class="tmm_item d-block font-14 primary-color pt-3">Web Development</a></li>
+                            <li><a href="/services/mobile-development/" class="tmm_item d-block font-14 primary-color pt-3">Mobile Development </a></li>
+                            <li><a href="/services/e-commerce/" class="tmm_item d-block font-14 primary-color pt-3">E-commerce Services</a></li>
+                            <li><a href="/services/cms/" class="tmm_item d-block font-14 primary-color pt-3">Content Management Systems</a></li>
+                            <li><a href="/services/custom-software/" class="tmm_item d-block font-14 primary-color pt-3">Custom Software Development</a></li>
+                            <li><a href="/services/responsive-web-design/" class="tmm_item d-block font-14 primary-color pt-3">Responsive Web Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">AI & ML</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">Machine Learning</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">Voice Recognition</a></li>
+                        </ul>
+                    </div>
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">CRM & ERP</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">SAP</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">ERP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">OPEN SOURCE</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">GitHub</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">ERP Opensource</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <a class="navbar-brand" href="/">
+            <img src="images/logo.png" class="img-fluid" alt="SANTOPHY">
+        </a>
+        <button class="navbar-toggler" style="display: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-4">
+                    <a class="nav-link font-15 primary-color font-AquireB" href="/about/">ABOUT Us</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link font-15 primary-color font-AquireB" href="/portfolio/">PORTOFOLIO</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link head_menu_services_btn font-15 primary-color font-AquireB" href="javascript:void(0)"> SERVICES</a>
+                </li>
+                <li class="nav-item dropdown custom_mega_drop_down  ml-4 position-static">
+
+                    <a class="nav-link dropdown-toggle head_menu_technology_btn font-16 primary-color font-AquireB" href="javascript:void(0)" id="2navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TECHNOLOGIES</a>
+
+                    <div class="dropdown-menu mega_drop_down position-absolute" aria-labelledby="2navbarDropdown">
+                        <div class="dropdown_title d-flex align-items-center justify-content-center w-100">
+                            <h2 class="font-AquireL font-500 m-0 font-22 h-50 pt-3 pb-4">Technologies we work on</h2>
+                        </div>
+                        
+                        <div class="dropdown_innerbody pl-4 pr-4 d-inline-flex w-100">
+                            
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Web Development</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/angular/"><img src="images/svg/angular.svg" class="dropdown_item_icon">AngularJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/reactjs/"><img src="images/svg/react-logo.svg" class="dropdown_item_icon">ReactJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/redux/"><img src="images/svg/redux.svg" class="dropdown_item_icon">Redux</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/php/"><img src="images/svg/cake-php.svg" class="dropdown_item_icon">Cake PHP</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/nodejs/"><img src="images/svg/node-js.svg" style="height: 25px; width: 50px;" class="dropdown_item_icon">NodeJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/python/"><img src="images/svg/python.svg" class="dropdown_item_icon">Python</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/django/"><img src="images/svg/django.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Django</a></li>
+                                </ul>
+                            </div>
+                            <div class="column_2">
+                                <div>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <br>
+                                        <li><a class="dropdown-item font-13" href="/technologies/flask/"><img src="images/svg/flask.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Flask</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ai-ml/"><img src="images/svg/AI%20ML.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">AI/ML</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/data-science/"><img src="images/svg/data-science.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Data Science</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/web-scrapping/"><img src="images/svg/web-scrapping.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Web Scrapping</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/odoo/"><img src="images/svg/odoo.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Odoo</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ruby/"><img src="images/svg/Ruby.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Ruby</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ror/"><img src="images/svg/ror-icon.svg" class="dropdown_item_icon">ROR</a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                            <div class="column_2">
+                                <div>
+                                    
+                                    <h2 class="inner_title font-15 text-uppercase mb-3">Web Designing</h2>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <li><a class="dropdown-item font-13" href="/technologies/html/"><img src="images/svg/html5.svg" class="dropdown_item_icon">HTML5</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/css/"><img src="images/svg/css3-icon.svg" class="dropdown_item_icon">CSS3</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/javascript/"><img src="images/svg/javascript.svg" class="dropdown_item_icon">JavaScript</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/material-ui/"><img src="images/svg/mern.svg" class="dropdown_item_icon">Material UI</a></li>
+                                    </ul>
+                                    <h2 class="inner_title font-15 text-uppercase mt-3 mb-3">Graphic Designing</h2>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-xd/"><img src="images/svg/adobe-xd.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe XD</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/figma/"><img src="images/svg/Figma.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Figma</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-ai/"><img src="images/svg/Adobe%20Illustrator.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe AI</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-ps/"><img src="images/svg/adobe-photoshop.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe PS</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                            <div class="column_2">
+                                
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Mobile Development</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/android/"><img src="images/svg/android.svg" class="dropdown_item_icon">Android</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/ios/"><img src="images/svg/ios-apple.svg" class="dropdown_item_icon">IOS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/react-native/"><img src="images/svg/react-logo.svg" class="dropdown_item_icon">React Native</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/flutter/"><img src="images/svg/flutter.svg" class="dropdown_item_icon">Flutter</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/ionic/"><img src="images/svg/Ionic.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Ionic</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Databases</h2>
+                                <ul class="drop_down_links  d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/mysql/"><img src="images/svg/mysql.svg" class="dropdown_item_icon">MySQL</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/postgress/"><img src="images/svg/postgresql.svg" class="dropdown_item_icon">PostGres</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/mongodb/"><img src="images/svg/mongodb.svg" class="dropdown_item_icon">Mongo DB</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/sqlite/"><img src="images/svg/sqlite.svg" class="dropdown_item_icon">SQLite</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/oracle/"><img src="images/svg/oracle.svg" style="height: 25px; width: 45px;" class="dropdown_item_icon">Oracle</a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Cloud Services</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/gcp/"><img src="images/svg/GCP.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">GCP</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/aws/"><img src="images/svg/AWS.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">AWS Mobile Hub</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/linode/"><img src="images/svg/Linode.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Linode</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/digital-ocean/"><img src="images/svg/Digital%20Ocean.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Digital Ocean</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/azure/"><img src="images/svg/Azure.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Azure</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/firebase/"><img src="images/svg/firebase.svg" class="dropdown_item_icon">Firebase</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <!--<a class="nav-link" href="/our-team/">OUR TEAM</a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="call_box d-inline-block">
+    <div class="call_top_head font-16">
+        Request a Call-Back <a href="" class="call_box_head_icon"><img src="images/call_head_icon.svg"></a>
+    </div>
+    <div class="call_body">
+        <p class="font-16 font-500 talk_us">Talk to our developers, discuss your project Now.</p>
+        <p><a href="tel: +919893707918" class="contact_details font-14"><i class="fas fa-phone-alt" style="margin-right: 10px;"></i>(+91) (989) 370-7918</a></p>
+        <p><a href="mailto: info@santophy.com" class="contact_details font-14"><i class="fas fa-envelope" style="margin-right: 10px;"></i>info@santophy.com</a></p>
+        
+        <div class="contact_social d-inline-flex   w-100">
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/whatsapp.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/linkdin.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/facebook.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/insta.png">
+            </a>
+        </div>
+    </div>
+</div>
+    <!-- right call box section end here -->
+    <!-- top-header section start here -->
+    <section class="top-hero_image overflow-hidden position-relative d-inline-flex w-100">
+        <img class="dotted_square_img position-absolute" src="images/svg/dooted_square_shape.svg">
+        <img class="dotted_circle_img position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_bottom_left_squar position-absolute" src="images/svg/dooted_square_shape.svg">
+        <div class="container-fluid">
+            <div class="row align-items-center h-100 pt-4 pb-4 mt-5 mb-5">
+                <div class="col-lg-5 order-2 order-md-1">
+                    <div class="top_hero_content text-center">
+                        <h1 class="font-AquireB font-24 secondry-color mb-0 pb-4">WE LIKE WHAT WE DO AND WE DO WHAT OUR CLIENTS LIKE..
+                        </h1>
+                        <div class="top_hero_content_body d-inline-block w-100">
+                            <p class="primary-color font-16 text-justify">We offer an professional, local, and active expertise to build your website design, or redesign, from begin to end. Our aim is to build profitable digital product and remodel client's thoughts into reality.</p>
+                        </div>
+                        <div class="top_banner_btns d-inline-flex align-items-center w-100 mt-5 justify-content-center">
+                            <a  href="javascript:void(1)" class="btn btn-primary mr-4 head_menu_services_btn font-16 font-500">Explore Services</a>
+                            <a  href="" class="btn btn-theme font-16 font-500">Schedule an Interview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pr-5 offset-lg-1 order-1 order-md-2">
+                    <div class="top_hero_right_img text-center">
+                        <!-- <img src="images/hero_right_img.png" class="img-fluid">  -->
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_s2gl4sh8.json" background="transparent"  speed="1"  style="width: 112%; height: 80%; ;" loop  autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top-header section end here -->
+    <!-- solutions section start here -->
+    <section class="solution_section position-relative pt-5">
+        <img class="dotted_square_img top-50 right-50 position-absolute" src="images/svg/dooted_square_shape.svg">
+        <img class="dotted_circle_top_left position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <!-- <img class="wave_img_right position-absolute" src="images/svg/wave_img.svg"> -->
+        <div class="container-fluid position-relative">
+            <img  class="dotted_line_left position-absolute" src="images/svg/dotted_line.svg">
+            <img  class="dotted_line_right position-absolute" src="images/svg/dotted_line.svg">
+            <h3 class=" font-24 secondry-color font-AquireB text-center mb-4">SOLUTION WE DELIVER</h3>
+            <div class="col-7 mx-auto mb-30">
+                <div class="solution_sub_per ">
+                    <p class="font-16 dark-color text-center">We facilitate businesses move quick and grow with confidence by building future prepared code and obtain a positive tilt within the customer satisfaction Index.</p>
+                </div>
+            </div>
+            <div class="solutions_card_list d-inline-block w-100">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="solution_card d-inline-block w-100 p-3 text-center draw">
+                            <img src="images/web-development (2).svg" class="sl_card_icon mb-3">
+                            <div class="sl_card_body">
+                                <h5 class="sl_title font-600 secondary-drak font-20 mb-3">Web Development</h5>
+                                <p class="font-15 text-center dark-color">We provide thoughtful and effective web page designs created by our professionals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="solution_card d-inline-block w-100 p-3 text-center draw">
+                            <img src="images/innovation.svg" class="sl_card_icon mb-3">
+                            <div class="sl_card_body ">
+                                <h5 class="sl_title font-600 secondary-drak font-2 mb-3">UI UX Design</h5>
+                                <p class="font-15 text-center dark-color">We provide elegant UI&UX, bold typography, intuitive navigation and uniquely custom designed with quality content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="solution_card d-inline-block w-100 p-3 text-center draw">
+                            <img src="images/apps-develop.svg" class="sl_card_icon mb-3">
+                            <div class="sl_card_body ">
+                                <h5 class="sl_title font-600 secondary-drak font-20 mb-3">Mobile App Development</h5>
+                                <p class="font-15 text-center text-center dark-color">We offer world-class mobility solutions and form your concepts into a revolutionary mobile app.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="solution_card d-inline-block w-100 p-3 text-center draw">
+                            <img src="images/aiml.svg" class="sl_card_icon mb-3">
+                            <div class="sl_card_body ">
+                                <h5 class="sl_title font-600 secondary-drak font-20 mb-3">AI/ML Development</h5>
+                                <p class="font-15 text-center dark-color mb-3">We offer the foremost exciting technologies that one would have ever come upon. It offers the computer that makes it a lot of the same as  humans.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- solutions section end here -->
+    <!-- why santophy section start here -->
+    <section class="why_santophy_section d-inline-block w-100 position-relative pt-4 mt-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="why_video_box position-relative pr-md-4 mt-2">
+                        <img src="images/video_thumbnail.png" class="img-fluid cover_img">
+                        <a href="javascript:void(0)" class="paush_icon position-absolute m-auto d-none"><img src="images/svg/video_play.svg"></a>
+                        <div class="video_strip secomdry-color font-600 text-center d-none">
+                            Watch 2 minutes
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why_text pl-md-3">
+                        <h5 class="why_title text-center font-AquireB font-26 pb-3 ">Why choose Santophy ?</h5>
+                        <h6 class="why_sub_title font-500 font-16 text-center">We facilitate businesses move quick and grow with confidence by building innovative future ready software.</h6>
+                        <div class="why_choose_options mt-4 d-inline-block w-100">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="why_options position-relative pl-5 mb-3">
+                                        <span class="why_left_icon">
+                                            <img src="images/svg/curency.svg">
+                                        </span>
+                                        <h3 class=" why_left_title font-16 font-500 mb-3 ">Lowest Prices</h3>
+                                        <p class="why_pera font-14">We guarantee you the most effective value accessible within the market.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="why_options position-relative pl-5 mb-3">
+                                        <span class="why_left_icon">
+                                            <img src="images/svg/time.svg">
+                                        </span>
+                                        <h3 class=" why_left_title font-16 font-500 mb-3">On-time Delivery</h3>
+                                        <p class="why_pera font-14">We emphasise on delivering each project on time, everytime.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="why_options position-relative pl-5 mb-3">
+                                        <span class="why_left_icon">
+                                            <img src="images/svg/phone.svg">
+                                        </span>
+                                        <h3 class=" why_left_title font-16 font-500 mb-3">After-sales support</h3>
+                                        <p class="why_pera font-14">We include free 1 year support with all our products and services.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="why_options position-relative pl-5 mb-3">
+                                        <span class="why_left_icon">
+                                            <img src="images/svg/imoji.svg">
+                                        </span>
+                                        <h3 class=" why_left_title font-16 font-500 mb-3">Quality Assurance</h3>
+                                        <p class="why_pera font-14">We provide a refund guarantee and promise best quality products.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why santophy section end here -->
+    <!-- we work technology section -->
+    <section class="we_work_technology py-90 d-inline-block w-100 position-relative overflow-hidden mt-4 mb-4">
+        <img class="dotted_circle_img position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_circle_top_left position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_square_top_left position-absolute" src="images/svg/dotted_square.svg">
+        <div class="container-fluid position-relative">
+            <h4 class="comm_title font-24 secondry-color font-AquireB text-center mb-4">Technologies we work with</h4>
+            <div class="col-10 mx-auto mb-57 position-relative ">
+                <!-- <img class="wave_img_right position-absolute" src="images/svg/wave_img.svg"> -->
+                <div class="solution_sub_per ">
+                    <p class="font-16 dark-color text-center w-75 mx-auto">We let you realize the market potential by  conveyance flexibility and ability and guarantee growth for your business, by providing most upgraded world-class software performance.</p>
+                </div>
+            </div>
+            <div class="our_technology_logo_list desktop_vue first_row d-flex align-items-center mt-5 ">
+                <div class="technology_logo_circler css_logo">
+                    <img src="images/css 3.svg" class="img-fluid tech_logo">
+                    <img src="images/Group 1214.svg" class="img-fluid  wh_logo">
+                </div>
+                <div class="technology_logo_circler flutter_logo">
+                    <img src="images/flutterio-ar21.svg"  class="img-fluid tech_logo">
+                    <img src="images/flutterio-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler python_logo">
+                    <img src="images/python (4).svg" class="img-fluid tech_logo">
+                    <img src="images/python-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler abode_logo">
+                    <img src="images/adobe-xd (4).svg" class="img-fluid tech_logo">
+                    <img src="images/adobe-wh.svg"  class="img-fluid wh_logo">
+                </div>
+            </div>
+            
+            <div class="our_technology_logo_list desktop_vue secnod_row d-flex align-items-center mx-auto justify-content-around">
+                <div class="technology_logo_circler html_logo">
+                    <img src="images/html 5.svg" class="img-fluid tech_logo">
+                    <img src="images/Group 1210.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler apple_logo">
+                    <img src="images/apple.png" class="img-fluid tech_logo">
+                    <img src="images/apple-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler redux_logo">
+                    <img src="images/redux (1).svg" class="img-fluid tech_logo">
+                    <img src="images/redux-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler ai_logo">
+                    <img src="images/adobe-illustrator.svg" class="img-fluid tech_logo">
+                    <img src="images/Group 1213.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler ruby_logo">
+                    <img src="images/ruby (1).svg" class="img-fluid tech_logo">
+                    <img src="images/ruby-wh.svg"  class="img-fluid wh_logo">
+                </div>
+            </div>
+            <div class="our_technology_logo_list desktop_vue third_row d-flex align-items-center mx-auto justify-content-around position-relative">
+                <!-- <img class="wave_img_left position-absolute" src="images/svg/wave_img.svg"> -->
+                <div class="technology_logo_circler react_logo">
+                    <img src="images/react (4).svg" class="img-fluid tech_logo">
+                    <img src="images/react-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler andriod_logo">
+                    <img src="images/android (1).svg" class="img-fluid tech_logo">
+                    <img src="images/android-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler rails_logo">
+                    <img src="images/rails-logo.svg" class="img-fluid tech_logo">
+                    <img src="images/rails-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler figma_logo">
+                    <img src="images/figma (1).svg" class="img-fluid tech_logo">
+                    <img src="images/figma-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler angular_logo">
+                    <img src="images/Group 1178.svg" class="img-fluid tech_logo">
+                    <img src="images/angular-wh.svg"  class="img-fluid wh_logo">
+                </div>
+                <div class="technology_logo_circler digital_logo">
+                    <img src="images/digitalocean-icon.svg" class="img-fluid tech_logo">
+                    <img src="images/digital-wh.svg"  class="img-fluid wh_logo">
+                </div>
+            </div>
+            <div class="mobile_vue">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler css_logo">
+                            <img src="images/css 3.svg" class="img-fluid tech_logo">
+                            <img src="images/Group 1214.svg" class="img-fluid  wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler flutter_logo">
+                            <img src="images/flutterio-ar21.svg"  class="img-fluid tech_logo">
+                            <img src="images/flutterio-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler python_logo">
+                            <img src="images/python (4).svg" class="img-fluid tech_logo">
+                            <img src="images/python-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler abode_logo">
+                            <img src="images/adobe-xd (4).svg" class="img-fluid tech_logo">
+                            <img src="images/adobe-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler html_logo">
+                            <img src="images/html 5.svg" class="img-fluid tech_logo">
+                            <img src="images/Group 1210.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler apple_logo">
+                            <img src="images/apple.png" class="img-fluid tech_logo">
+                            <img src="images/apple-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler redux_logo">
+                            <img src="images/redux (1).svg" class="img-fluid tech_logo">
+                            <img src="images/redux-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler ai_logo">
+                            <img src="images/adobe-illustrator.svg" class="img-fluid tech_logo">
+                            <img src="images/Group 1213.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler ruby_logo">
+                            <img src="images/ruby (1).svg" class="img-fluid tech_logo">
+                            <img src="images/ruby-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler react_logo">
+                            <img src="images/react (4).svg" class="img-fluid tech_logo">
+                            <img src="images/react-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler andriod_logo">
+                            <img src="images/android (1).svg" class="img-fluid tech_logo">
+                            <img src="images/android-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler rails_logo">
+                            <img src="images/rails-logo.svg" class="img-fluid tech_logo">
+                            <img src="images/rails-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler figma_logo">
+                            <img src="images/figma (1).svg" class="img-fluid tech_logo">
+                            <img src="images/figma-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler angular_logo">
+                            <img src="images/Group 1178.svg" class="img-fluid tech_logo">
+                            <img src="images/angular-wh.svg"  class="img-fluid wh_logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="technology_logo_circler digital_logo">
+                            <img src="images/digitalocean-icon.svg" class="img-fluid tech_logo">
+                            <img src="images/digital-wh.svg"  class="img-fluid wh_logo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- we work technology end section -->
+    <!-- our client says section start  -->
+    <section class="our_client_says_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="right_vectore_image_animation text-center">
+                        <!-- <img src="images/slider_image.png" class="img-fluid"> -->
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_v6uhdxvo.json" background="transparent"  speed="1"  style="width:100%; height: 100%; margin-top: 15%;" loop  autoplay></lottie-player>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="our_client_content position-relative">
+                        <img class="dotted_square_img top-50 right-50 position-absolute" src="images/svg/dooted_square_shape.svg">
+                        <!-- <img class="wave_img_right position-absolute" src="images/svg/wave_img.svg"> -->
+                        <img class="dotted_bottom_left_squar top-50 right-50 position-absolute" src="images/svg/dooted_square_shape.svg">
+                    <h3 class="font-AquireB font-24  text-center">Our CLIENT LOVES US !! <!-- <i class="fas fa-heart"></i> --> </h3>
+                    <p class="dark-color font-16 text-center">
+                        See what our clients say about us.
+                    </p>
+                    <!-- Slider main container -->
+                    <div class="swiper-container client_says mt-5" style="overflow: hidden;">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper w-100 h-100 d-flex">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="rating_stars_list d-inline-flex w-100 align-items-center mb-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="client_says_pera font-15 font-500">
+                                    Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply
+                                </p>
+                                <div class="client_profile_box d-inline-flex w-100 align-items-top">
+                                    <div class="client_profile position-relative">
+                                        <img src="images/avatar.png" class="avtar_img">
+                                        <h3 class="avtar_name">Sheetal Kumar</h3>
+                                        <p class="avtar_designation">CEO</p>
+                                    </div>
+                                    <img src="images/quote_icon.png" class="ml-auto quote_icon">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rating_stars_list d-inline-flex w-100 align-items-center mb-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="client_says_pera font-15 font-500">
+                                    Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply
+                                </p>
+                                <div class="client_profile_box d-inline-flex w-100 align-items-top">
+                                    <div class="client_profile position-relative">
+                                        <img src="images/avatar.png" class="avtar_img">
+                                        <h3 class="avtar_name">Sheetal Kumar</h3>
+                                        <p class="avtar_designation">CEO</p>
+                                    </div>
+                                    <img src="images/quote_icon.png" class="ml-auto quote_icon">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rating_stars_list d-inline-flex w-100 align-items-center mb-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="client_says_pera font-15 font-500">
+                                    Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply
+                                </p>
+                                <div class="client_profile_box d-inline-flex w-100 align-items-top">
+                                    <div class="client_profile position-relative">
+                                        <img src="images/avatar.png" class="avtar_img">
+                                        <h3 class="avtar_name">Sheetal Kumar</h3>
+                                        <p class="avtar_designation">CEO</p>
+                                    </div>
+                                    <img src="images/quote_icon.png" class="ml-auto quote_icon">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination cl_pagination mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our client says section end -->
+<!-- blog section start here -->
+<section class="blog_section py-90 d-inline-block w-100 position-relative overflow-hidden mt-5">
+    <img class="dotted_circle_img position-absolute" src="images/svg/dotted_circle_shape.svg">
+    <img class="dotted_square_img top-50 right-50 position-absolute" src="images/svg/dooted_square_shape.svg">
+    <!-- <img class="wave_img_left_top position-absolute" src="images/svg/wave_img.svg"> -->
+    <img class="dotted_bottom_left_squar position-absolute" src="images/svg/dooted_square_shape.svg">
+    <div class="container-fluid">
+        <div class="blog_titile">
+            <span class="under_line"></span>
+            <h4 class="font-AquireB comm_title text-center font-24 secondry-color pb-5">Our blogs</h4>
+        </div>
+        <div class="blog_text_box">
+            <doiv class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="blog_content">
+                    <h5 class="font-20 font-600 pb-3">Why Should You Update Your Website Right Now</h5>
+                    <p class="font-15">Many business owners believe website development to be a one-time thing – that the site will sprout the benefits all the time.</p>
+                    <p class="font-15">If you can relate to this thought, stop right there! Let us tell you that a website is not a set-and-forget thing.</p>
+                    <p class="font-15">You need to constantly update it and keep up with the latest trends. Not yet convinced? This blog is for you, then! Today, we will explore some of the reasons why you should hire a website development company and update your website without any delay.</p>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply</p> -->
+                    <div class="read_more d-inline-block w-100 text-center mt-4">
+                        <a href="javascript:void(0)" class="btn btn-rounded-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="blog_content">
+                    <h5 class="font-20 font-600 pb-3">Essential Features for Web App Development</h5>
+                    <p class="font-15">From large enterprises to small and medium scale businesses – all are leaning towards building a web app to enable the target audience to access their online destination effortlessly.</p>
+                    <p class="font-15">If you are looking to engage web application development services anytime soon, this blog is a must-read.</p>
+                    <p class="font-15">Here, we will explore some of the crucial features your web app should have. We will divide the blog into two aspects: technical components and features. Let’s check them out.</p>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply</p> -->
+                    <div class="read_more d-inline-block w-100 text-center mt-4">
+                        <a href="javascript:void(0)" class="btn btn-rounded-primary">Read More</a>
+                    </div>
+                </div>
+                </doiv>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog section end here -->
+<!-- call us section start here -->
+<!-- call us section start here  -->
+<section class="call_us d-inline-flex align-items-center w-100 mt-5">
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <!-- <img class="wave_img_right_bottom position-absolute" src="images/svg/wave_img.svg"> -->
+        <div class="call_us_detail position-relative">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-9">
+                    <h4 class="font-600 font-26 pb-5">Call us today to discuss your next big project.</h4>
+                    <p class="font-18">Every project is important for us, no matter how big or small. Give us a call today to discuss.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="javascript:void(1)" class="btn btn-theme font-16">Talk to An Expert</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- call us section end here  -->
+
+<footer class="footer  d-inline-block w-100 pt-4 pb-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">SERVICES</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/services/web-development/" class="foot_link font-14 d-block mb-2">Web Development</a>
+                        <a href="/services/mobile-development/" class="foot_link font-14 d-block mb-2">Mobile Development</a>
+                        <a href="/services/e-commerce/" class="foot_link font-14 d-block mb-2">E-commerce Services</a>
+                        <a href="/services/cms/" class="foot_link font-14 d-block mb-2">Content Management Systems</a>
+                        <a href="/services/custom-software/" class="foot_link font-14 d-block mb-2">Custom Software Development</a>
+                        <a href="/services/responsive-web-design/" class="foot_link font-14 d-block mb-2">Responsive Web Design</a>
+                        <div class="foot_social_links align-items-center justify-content-center w-100 my-4 d-none">
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-twitter"></i></a>
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="d-block text-center">
+                            <a href="/about/" class="btn btn_primary_fill d-none">More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-3 offset-2">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">COMPANY</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/about/" class="foot_link font-14 d-block mb-2">About</a>
+                        <a href="/portfolio/" class="foot_link font-14 d-block mb-2">Portfolio</a>
+                        <a href="/contact/" class="foot_link font-14 d-block mb-2">Request a Quote</a>
+                        <a href="/contact/" class="foot_link font-14 d-block mb-2">Contact</a>
+                        <!--<a href="/our-team/" class="foot_link">Meet Our Team</a>-->
+                        <a href="/privacy-policy/" class="foot_link font-14 d-block mb-2">Privacy Policy</a>
+                        <!--<a href="javascript:void(0)" class="foot_link">Blog</a>-->
+                        <!--<a href="javascript:void(0)" class="foot_link">FAQ</a>-->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 offset-1">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">TECHNOLOGIES</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/technologies/php/" class="foot_link font-14 d-block mb-2">PHP Development</a>
+                        <a href="/technologies/ror/" class="foot_link font-14 d-block mb-2">Ruby on Rails Development</a>
+                        <a href="/technologies/python/" class="foot_link font-14 d-block mb-2">Python Development</a>
+                        <a href="/technologies/angular/" class="foot_link font-14 d-block mb-2">Angular Development</a>
+                        <a href="/technologies/android/" class="foot_link font-14 d-block mb-2">Android Development</a>
+                        <a href="/technologies/ionic/" class="foot_link font-14 d-block mb-2">Ionic Development</a>
+                        <a href="/technologies/ios/" class="foot_link font-14 d-block mb-2">iOS Development</a>
+                        <a href="/technologies/nodejs/" class="foot_link font-14 d-block mb-2">NodeJs Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="copywrite py-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copywrite_text secondry-color font-14 mb-0">Copyright © 2021 Santophy Infotech Pvt. Ltd.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="copywrite_link  mb-0 d-flex align-items-center w-100 justify-content-end">
+                    <li><a href="javascript:void(0)" class="font-14">Privacy Policy</a> | </li>
+                    <li><a href="javascript:void(0)" class="font-14">&nbsp; Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!--Scripts-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- swiper js  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/toastr.min.js"></script>
+<script src="js/contact_form.js"></script>
+
+<!-- swiper initialize script -->
+<script src="js/main_menu.js"></script>
+
+</body>
+</html>

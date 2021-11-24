@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Santophy</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!-- fontawesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+            
+            <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+            <!-- stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light santophy_header fixed">
+    <div class="container-fluid">
+        <a href="javascript:void(0)" class="head_menu_btn head_menu_services_btn">
+            <span class="head_menu_icon position-relative"></span>
+        </a>
+        <!-- main menu drop down start here -->
+<div class="top_mega_menu d-inline-flex w-100">
+    <div class="menu_body  py-105">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">COMPANY</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="/about/" class="tmm_item d-block font-14 primary-color pt-3">About</a></li>
+                            <li><a href="/portfolio/" class="tmm_item d-block font-14 primary-color pt-3">Portfolio</a></li>
+                            <li><a href="/contact/" class="tmm_item d-block font-14 primary-color pt-3">Request a Quote</a></li>
+                            <li><a href="/contact/" class="tmm_item d-block font-14 primary-color pt-3">Contact</a></li>
+                            <!-- <li><a href="/our-team/" class="tmm_item">Meet Our Team</a></li>-->
+                            <li><a href="/privacy-policy/" class="tmm_item d-block font-14 primary-color pt-3">Privacy Policy</a></li>
+                            <!--<li><a href="javascript:void(0)" class="tmm_item">Blog</a></li>-->
+                            <!--<li><a href="javascript:void(0)" class="tmm_item">FAQ</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4 ">SERVICES</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="/services/web-development/" class="tmm_item d-block font-14 primary-color pt-3">Web Development</a></li>
+                            <li><a href="/services/mobile-development/" class="tmm_item d-block font-14 primary-color pt-3">Mobile Development </a></li>
+                            <li><a href="/services/e-commerce/" class="tmm_item d-block font-14 primary-color pt-3">E-commerce Services</a></li>
+                            <li><a href="/services/cms/" class="tmm_item d-block font-14 primary-color pt-3">Content Management Systems</a></li>
+                            <li><a href="/services/custom-software/" class="tmm_item d-block font-14 primary-color pt-3">Custom Software Development</a></li>
+                            <li><a href="/services/responsive-web-design/" class="tmm_item d-block font-14 primary-color pt-3">Responsive Web Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">AI & ML</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">Machine Learning</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">Voice Recognition</a></li>
+                        </ul>
+                    </div>
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">CRM & ERP</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">SAP</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">ERP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tmm_menu_list">
+                        <h2 class="commn_title_underline primary-color font-20 font-AquireL position-relative d-inline-block font-600 pb-4">OPEN SOURCE</h2>
+                        <ul class="tmm_link_list p-0 mt-2">
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">GitHub</a></li>
+                            <li><a href="javascript:void(0)" class="tmm_item d-block font-14 primary-color pt-3">ERP Opensource</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <a class="navbar-brand" href="/">
+            <img src="images/logo.png" class="img-fluid" alt="SANTOPHY">
+        </a>
+        <button class="navbar-toggler" style="display: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-4">
+                    <a class="nav-link font-15 primary-color font-AquireB" href="/about/">ABOUT Us</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link font-15 primary-color font-AquireB" href="/portfolio/">PORTOFOLIO</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <a class="nav-link head_menu_services_btn font-15 primary-color font-AquireB" href="javascript:void(0)"> SERVICES</a>
+                </li>
+                <li class="nav-item dropdown custom_mega_drop_down  ml-4 position-static">
+
+                    <a class="nav-link dropdown-toggle head_menu_technology_btn font-16 primary-color font-AquireB" href="javascript:void(0)" id="2navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TECHNOLOGIES</a>
+
+                    <div class="dropdown-menu mega_drop_down position-absolute" aria-labelledby="2navbarDropdown">
+                        <div class="dropdown_title d-flex align-items-center justify-content-center w-100">
+                            <h2 class="font-AquireL font-500 m-0 font-22 h-50 pt-3 pb-4">Technologies we work on</h2>
+                        </div>
+                        
+                        <div class="dropdown_innerbody pl-4 pr-4 d-inline-flex w-100">
+                            
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Web Development</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/angular/"><img src="images/svg/angular.svg" class="dropdown_item_icon">AngularJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/reactjs/"><img src="images/svg/react-logo.svg" class="dropdown_item_icon">ReactJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/redux/"><img src="images/svg/redux.svg" class="dropdown_item_icon">Redux</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/php/"><img src="images/svg/cake-php.svg" class="dropdown_item_icon">Cake PHP</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/nodejs/"><img src="images/svg/node-js.svg" style="height: 25px; width: 50px;" class="dropdown_item_icon">NodeJS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/python/"><img src="images/svg/python.svg" class="dropdown_item_icon">Python</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/django/"><img src="images/svg/django.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Django</a></li>
+                                </ul>
+                            </div>
+                            <div class="column_2">
+                                <div>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <br>
+                                        <li><a class="dropdown-item font-13" href="/technologies/flask/"><img src="images/svg/flask.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Flask</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ai-ml/"><img src="images/svg/AI%20ML.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">AI/ML</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/data-science/"><img src="images/svg/data-science.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Data Science</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/web-scrapping/"><img src="images/svg/web-scrapping.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Web Scrapping</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/odoo/"><img src="images/svg/odoo.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Odoo</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ruby/"><img src="images/svg/Ruby.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Ruby</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/ror/"><img src="images/svg/ror-icon.svg" class="dropdown_item_icon">ROR</a></li>
+                                    </ul>
+                                    
+                                </div>
+                                <div>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                            <div class="column_2">
+                                <div>
+                                    
+                                    <h2 class="inner_title font-15 text-uppercase mb-3">Web Designing</h2>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <li><a class="dropdown-item font-13" href="/technologies/html/"><img src="images/svg/html5.svg" class="dropdown_item_icon">HTML5</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/css/"><img src="images/svg/css3-icon.svg" class="dropdown_item_icon">CSS3</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/javascript/"><img src="images/svg/javascript.svg" class="dropdown_item_icon">JavaScript</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/material-ui/"><img src="images/svg/mern.svg" class="dropdown_item_icon">Material UI</a></li>
+                                    </ul>
+                                    <h2 class="inner_title font-15 text-uppercase mt-3 mb-3">Graphic Designing</h2>
+                                    <ul class="drop_down_links d-inline-block">
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-xd/"><img src="images/svg/adobe-xd.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe XD</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/figma/"><img src="images/svg/Figma.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Figma</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-ai/"><img src="images/svg/Adobe%20Illustrator.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe AI</a></li>
+                                        <li><a class="dropdown-item font-13" href="/technologies/adobe-ps/"><img src="images/svg/adobe-photoshop.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Adobe PS</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                            <div class="column_2">
+                                
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Mobile Development</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/android/"><img src="images/svg/android.svg" class="dropdown_item_icon">Android</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/ios/"><img src="images/svg/ios-apple.svg" class="dropdown_item_icon">IOS</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/react-native/"><img src="images/svg/react-logo.svg" class="dropdown_item_icon">React Native</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/flutter/"><img src="images/svg/flutter.svg" class="dropdown_item_icon">Flutter</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/ionic/"><img src="images/svg/Ionic.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Ionic</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Databases</h2>
+                                <ul class="drop_down_links  d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/mysql/"><img src="images/svg/mysql.svg" class="dropdown_item_icon">MySQL</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/postgress/"><img src="images/svg/postgresql.svg" class="dropdown_item_icon">PostGres</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/mongodb/"><img src="images/svg/mongodb.svg" class="dropdown_item_icon">Mongo DB</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/sqlite/"><img src="images/svg/sqlite.svg" class="dropdown_item_icon">SQLite</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/oracle/"><img src="images/svg/oracle.svg" style="height: 25px; width: 45px;" class="dropdown_item_icon">Oracle</a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <div class="column_2">
+                                <h2 class="inner_title font-15 text-uppercase mb-3">Cloud Services</h2>
+                                <ul class="drop_down_links d-inline-block">
+                                    <li><a class="dropdown-item font-13" href="/technologies/gcp/"><img src="images/svg/GCP.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">GCP</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/aws/"><img src="images/svg/AWS.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">AWS Mobile Hub</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/linode/"><img src="images/svg/Linode.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Linode</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/digital-ocean/"><img src="images/svg/Digital%20Ocean.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Digital Ocean</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/azure/"><img src="images/svg/Azure.svg" style="height: 30px; width: 30px;" class="dropdown_item_icon">Azure</a></li>
+                                    <li><a class="dropdown-item font-13" href="/technologies/firebase/"><img src="images/svg/firebase.svg" class="dropdown_item_icon">Firebase</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <!--<a class="nav-link" href="/our-team/">OUR TEAM</a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="call_box d-inline-block">
+    <div class="call_top_head font-16">
+        Request a Call-Back <a href="" class="call_box_head_icon"><img src="images/call_head_icon.svg"></a>
+    </div>
+    <div class="call_body">
+        <p class="font-16 font-500 talk_us">Talk to our developers, discuss your project Now.</p>
+        <p><a href="tel: +919893707918" class="contact_details font-14"><i class="fas fa-phone-alt" style="margin-right: 10px;"></i>(+91) (989) 370-7918</a></p>
+        <p><a href="mailto: info@santophy.com" class="contact_details font-14"><i class="fas fa-envelope" style="margin-right: 10px;"></i>info@santophy.com</a></p>
+        
+        <div class="contact_social d-inline-flex   w-100">
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/whatsapp.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/linkdin.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/facebook.png">
+            </a>
+            <a href="javascript:void(0)" class="con_social_icons">
+                <img src="images/insta.png">
+            </a>
+        </div>
+    </div>
+</div>
+    <!-- right call box section end here -->
+
+
+
+
+    <!--  about top us top bg images -->
+    <!-- santophy something section start here -->
+    <section class="something_santophy  d-inline-flex w-100 position-relative mt-5 pt-5">
+        <img class="dotted_square_img  position-absolute" src="images/svg/dooted_square_shape.svg">
+        <img class="dotted_circle_top_left position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_center_left_squar position-absolute" src="images/svg/dooted_square_shape.svg">
+        <!-- <img class="wave_img_right position-absolute" src="images/svg/wave_img.svg"> -->
+        <div class="container-fluid text-center">
+            <div class="row align-items-center h-100 ">
+                <div class="col-lg-5 order-2 order-md-1">
+                    <div class="top_hero_content text-center">
+                        <h4 class="font-AquireB secondry-color mb-0 ">About Santophy</h4>
+                        <div class="top_hero_content_body d-inline-block w-100 py-4">
+                            <p class="primary-color text-justify font-16">Santophy is a global IT development company that assists companies/clients to achieve their goals with world-class, industry-specific software solutions. We strive as to create your choice of choosing us the prime decision ever made.</p>
+                            <p class="primary-color text-justify font-16">We have experience in successfully delivering a variety of websites like E-commerce websites(B2B+B2C), business directories, CMS websites, data-driven websites, blog websites, community website, Mobile applications etc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pr-5 offset-lg-1 order-1 order-md-2">
+                    <div class="top_hero_right_img text-center">
+                        <img src="images/about.svg" class="img-fluid">
+                    </div>
+                </div>
+                <!-- <h2 class="commn_title font-AquireSB font-40 primary-color">Something about Santophy</h2> -->
+                <!-- <span class="santophy_about_badge">About Santophy</span> -->
+                <div class="we_promise mt-4 d-block ">
+                    <!-- <h4 class="font-600 promis_title">SOLUTION WE DELIVER</h4> -->
+                    <!-- <p class="light-dark ">We facilitate businesses move quick and grow with confidence by building future prepared code and obtain a positive tilt within the customer satisfaction Index.
+                    </p> -->
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- santophy something section end here -->
+    <section class="about_top_breadcrumbs_bg d-inline-flex align-items-center w-100 mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="breadcrumbs_text text-center">
+                        
+                        <span class="santophy_about_badge font-20 align-items-center mb-4">About Santophy</span>
+                        <h5 class="font-22 primary-color font-600 mb-3">We Promise, We Deliver.</h5>
+                        <p class=" font-16 mx-auto light-dark">For us, each of our projects is a gateway to further augment our potential, achieve new breakthroughs and get a favorable tilt in customer satisfaction index.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- about our success section start here -->
+    <section class="about_our_success d-inline-block w-100 py-105 position-relative overflow-hidden mb-4">
+        <!-- <img class="wave_img_right position-absolute" src="images/svg/wave_img.svg"> -->
+        <img class="dotted_circle_top_left position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_circle_top_left position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <img class="dotted_square_top_left position-absolute" src="images/svg/dotted_square.svg">
+        <img class="dotted_circle_img position-absolute" src="images/svg/dotted_circle_shape.svg">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 ">
+                    <div class="about_success_box position-relative d-inline-flex align-items-center w-100">
+                        <img src="images/svg/2-years.svg" class="about_success_icon">
+                        <div class="about_success_text primary-color d-inline-flex">
+                            <span class="font-AquireSB font-50">02</span>
+                            <h5 class="text-center font-32 font-500 text-uppercase ">YEARS IN BUSINESS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="about_success_box position-relative d-inline-flex align-items-center w-100">
+                        <img src="images/svg/team-member.svg" class="about_success_icon">
+                        <div class="about_success_text primary-color">
+                            <span class="font-AquireSB font-50">15+</span>
+                            <h5 class="text-center  font-32 font-500 text-uppercase">TEAM MEMBERS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <div class="about_success_box position-relative d-inline-flex align-items-center w-100">
+                        <img src="images/svg/happy-client.svg" class="about_success_icon">
+                        <div class="about_success_text primary-color">
+                            <span class="font-AquireSB font-50">100+</span>
+                            <h5 class="text-center  font-32 font-500 text-uppercase">Happy Clients</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about our success section end here -->
+    <!-- santophy web development company sectcion start -->
+    <section class="santophy_web_development w-100  position-relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="santophy_web_text mt-4">
+                        <span class="santophy_about_badge font-20 mt-1">The most Trusted Company</span>
+                        <h4 class="comm_title font-24 font-AquireB primary-color">Website Development Company</h4>
+                        <p class="santophy_pera font-16 light-dark mt-4 d-block align-items-justify">Santophy, website development company in Indore provides a wide array of website design services for SMEs as well as large enterprises. Our team of proficient website developers & experienced digital marketing specialists uses the latest technologies and tried way to form user-engaging business websites & dynamic web applications and promote them to reinforce customer reach.</p>
+                        <div class="santophy_progress_bar">
+                            <h5 class="font-18 primary-color font-600 mb-3 ">Client Referral Rate</h5>
+                            <div class="progress_bar">
+                                <div class="fill_progress_bar"></div>
+                                <span class="progress_value">80%</span>
+                            </div>
+                        </div>
+                        <div class="santophy_progress_bar w-95">
+                            <h5 class="font-18 primary-color font-600 mb-3">Customer Rating More than 4+</h5>
+                            <div class="progress_bar">
+                                <div class="fill_progress_bar"></div>
+                                <span class="progress_value">95%</span>
+                            </div>
+                        </div>
+                        <div class="santophy_progress_bar w_100">
+                            <h5 class="font-18 primary-color font-600 mb-3">How Much We Love Our Clients?</h5>
+                            <div class="progress_bar">
+                                <div class="fill_progress_bar"></div>
+                                <span class="progress_value">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer  d-inline-block w-100 pt-4 pb-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">SERVICES</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/services/web-development/" class="foot_link font-14 d-block mb-2">Web Development</a>
+                        <a href="/services/mobile-development/" class="foot_link font-14 d-block mb-2">Mobile Development</a>
+                        <a href="/services/e-commerce/" class="foot_link font-14 d-block mb-2">E-commerce Services</a>
+                        <a href="/services/cms/" class="foot_link font-14 d-block mb-2">Content Management Systems</a>
+                        <a href="/services/custom-software/" class="foot_link font-14 d-block mb-2">Custom Software Development</a>
+                        <a href="/services/responsive-web-design/" class="foot_link font-14 d-block mb-2">Responsive Web Design</a>
+                        <div class="foot_social_links align-items-center justify-content-center w-100 my-4 d-none">
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-twitter"></i></a>
+                            <a href="javascript:void(0)" class="social_icons"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="d-block text-center">
+                            <a href="/about/" class="btn btn_primary_fill d-none">More About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-3 offset-2">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">COMPANY</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/about/" class="foot_link font-14 d-block mb-2">About</a>
+                        <a href="/portfolio/" class="foot_link font-14 d-block mb-2">Portfolio</a>
+                        <a href="/contact/" class="foot_link font-14 d-block mb-2">Request a Quote</a>
+                        <a href="/contact/" class="foot_link font-14 d-block mb-2">Contact</a>
+                        <!--<a href="/our-team/" class="foot_link">Meet Our Team</a>-->
+                        <a href="/privacy-policy/" class="foot_link font-14 d-block mb-2">Privacy Policy</a>
+                        <!--<a href="javascript:void(0)" class="foot_link">Blog</a>-->
+                        <!--<a href="javascript:void(0)" class="foot_link">FAQ</a>-->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 offset-1">
+                <div class="foot_services">
+                    <h6 class="foot_titile font-15 font-500 font-AquireL">TECHNOLOGIES</h6>
+                    <div class="foot_body d-inline-block w-100 mt-3">
+                        <a href="/technologies/php/" class="foot_link font-14 d-block mb-2">PHP Development</a>
+                        <a href="/technologies/ror/" class="foot_link font-14 d-block mb-2">Ruby on Rails Development</a>
+                        <a href="/technologies/python/" class="foot_link font-14 d-block mb-2">Python Development</a>
+                        <a href="/technologies/angular/" class="foot_link font-14 d-block mb-2">Angular Development</a>
+                        <a href="/technologies/android/" class="foot_link font-14 d-block mb-2">Android Development</a>
+                        <a href="/technologies/ionic/" class="foot_link font-14 d-block mb-2">Ionic Development</a>
+                        <a href="/technologies/ios/" class="foot_link font-14 d-block mb-2">iOS Development</a>
+                        <a href="/technologies/nodejs/" class="foot_link font-14 d-block mb-2">NodeJs Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class="copywrite py-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copywrite_text secondry-color font-14 mb-0">Copyright © 2021 Santophy Infotech Pvt. Ltd.</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="copywrite_link  mb-0 d-flex align-items-center w-100 justify-content-end">
+                    <li><a href="javascript:void(0)" class="font-14">Privacy Policy</a> | </li>
+                    <li><a href="javascript:void(0)" class="font-14">&nbsp; Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Scripts-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- swiper js  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/toastr.min.js"></script>
+<script src="js/contact_form.js"></script>
+
+<!-- swiper initialize script -->
+<script src="js/main_menu.js"></script>
+
+</body>
+</html>
